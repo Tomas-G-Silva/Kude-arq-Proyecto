@@ -485,3 +485,40 @@ background-color: rgb(240, 240, 240);
     color: rgba(255, 255, 255, 0.4);
     width: 7vw;
 }
+
+
+
+/* MEDIA Q*/
+
+
+@media (max-width: 425px){
+    /* servicios */
+    .servicios {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 205vh;
+    }
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+    }
+    .footer-1 {
+        width: 50vw;
+        padding: 10px;
+        margin: 5px;
+    }
+    .footer-2 {
+        width: 50vw;
+    }
+    .contacto-f {
+        text-align: center;
+    }
+    .copyright a {
+        width: 23vw;
+    }
+    
+
+
+}
