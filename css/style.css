@@ -131,7 +131,7 @@ h1 {
     grid-template-areas:
         "obra-1 obra-2 obra-3"
         "obra-4 obra-5 obra-6";
-    height: 70vh;
+    height: 100vh;
     align-items: center;
     justify-items: center;
 
@@ -408,11 +408,11 @@ h1 {
 }
 
 /* Formulario */
-.seccion-form{
-height: 90vh;
-margin: 4%;
-padding: 2%;
-background-color: rgb(240, 240, 240);
+.seccion-form {
+    height: 90vh;
+    margin: 4%;
+    padding: 2%;
+    background-color: rgb(240, 240, 240);
 }
 
 .formulario {
@@ -491,34 +491,53 @@ background-color: rgb(240, 240, 240);
 /* MEDIA Q*/
 
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
+
     /* servicios */
     .servicios {
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 205vh;
+        height: 125vh;
     }
 
+    /* obras y proyectos */
+
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 170vh;
+    }
+
+    .obras {
+        width: 65vw;
+        margin: 10px;
+    }
+    
     /* footer */
     .footer {
         flex-direction: column;
     }
+
     .footer-1 {
         width: 50vw;
         padding: 10px;
         margin: 5px;
     }
+
     .footer-2 {
         width: 50vw;
     }
+
     .contacto-f {
         text-align: center;
     }
+
     .copyright a {
         width: 23vw;
     }
-    
+
 
 
 }
