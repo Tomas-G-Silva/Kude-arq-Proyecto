@@ -408,7 +408,7 @@ h1 {
 
 /* Formulario */
 .seccion-form {
-    height: 90vh;
+    height: auto;
     margin: 4%;
     padding: 2%;
     background-color: rgb(240, 240, 240);
