@@ -49,7 +49,6 @@ h1 {
 
 /* INDEX-BODY */
 
-
 .index {
     margin: 3%;
 }
@@ -138,7 +137,7 @@ h1 {
 
 }
 
-/* OBRA 1 */
+/* Obra 1 */
 .obra-1 {
     grid-area: obra-1;
     position: relative;
@@ -159,7 +158,7 @@ h1 {
     opacity: 1;
 }
 
-/* OBRA 2 */
+/* Obra 2 */
 .obra-2 {
     grid-area: obra-2;
     position: relative;
@@ -182,7 +181,7 @@ h1 {
     text-align: center;
 }
 
-/* OBRA 3 */
+/* Obra 3 */
 .obra-3 {
     grid-area: obra-3;
     position: relative;
@@ -204,7 +203,7 @@ h1 {
     text-align: center;
 }
 
-/* OBRA 4 */
+/* Obra 4 */
 .obra-4 {
     grid-area: obra-4;
     position: relative;
@@ -226,7 +225,7 @@ h1 {
     text-align: center;
 }
 
-/* OBRA 5 */
+/* Obra 5 */
 .obra-5 {
     grid-area: obra-5;
     position: relative;
@@ -248,7 +247,7 @@ h1 {
     text-align: center;
 }
 
-/* OBRA 6 */
+/* Obra 6 */
 .obra-6 {
     grid-area: obra-6;
     position: relative;
@@ -277,16 +276,12 @@ h1 {
     display: block;
 }
 
-
 .obras:hover {
     filter: brightness(25%);
     transition: 1s ease;
 }
 
-
-
 /* QUIENES SOMOS - BODY */
-
 .integrantes {
     margin: 3%;
 }
@@ -348,7 +343,7 @@ h1 {
     margin: 3%;
 }
 
-/* OBJETIVOS-VISION */
+/* Objetivos-vision */
 .list-group-item {
     text-align: left;
 }
@@ -378,7 +373,6 @@ h1 {
 }
 
 /* CONTACTO-BODY */
-
 .section-c {
     display: flex;
     justify-content: space-around;
@@ -405,7 +399,7 @@ h1 {
     width: 2vw;
 }
 
-/* MAPA */
+/* Mapa */
 .mapa {
     margin: 2%;
     filter: grayscale(100);
@@ -413,9 +407,7 @@ h1 {
     height: 45vh;
 }
 
-
-/* FORMULARIO */
-
+/* Formulario */
 .seccion-form{
 height: 90vh;
 margin: 4%;
@@ -428,13 +420,7 @@ background-color: rgb(240, 240, 240);
 }
 
 
-
-
-
-
-
 /* FOOTER */
-
 .footer {
     display: flex;
     justify-content: space-between;
