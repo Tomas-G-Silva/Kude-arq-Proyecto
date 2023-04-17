@@ -134,7 +134,6 @@ h1 {
     height: 100vh;
     align-items: center;
     justify-items: center;
-
 }
 
 /* Obra 1 */
@@ -488,34 +487,60 @@ h1 {
 
 
 
+
 /* MEDIA Q*/
-
-
 @media (max-width: 425px) {
 
-    /* servicios */
+    /* Servicios */
     .servicios {
         display: flex;
         align-items: center;
+        justify-content: space-around;
         flex-direction: column;
-        height: 125vh;
+        height: 120vh;
     }
 
-    /* obras y proyectos */
+    /* Index */
 
+    .panel-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .parrafo-incio {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        text-align: left;
+    }
+
+    .personal {
+        width: 95vw;
+    }
+
+    .reconocimientos {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Obras y proyectos */
     .proyectos {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 170vh;
+        height: auto;
     }
 
     .obras {
         width: 65vw;
         margin: 10px;
     }
-    
-    /* footer */
+
+    /* Footer */
     .footer {
         flex-direction: column;
     }
@@ -537,7 +562,4 @@ h1 {
     .copyright a {
         width: 23vw;
     }
-
-
-
 }
