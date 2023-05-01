@@ -1,0 +1,565 @@
+/* GENERAL */
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    background-color: #d4d4d4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(183,840,453)'%3E%3Cstop offset='0' stop-color='%23F8F8F8'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='504' height='420' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.04'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin: 2%;
+}
+
+.banner {
+    width: 100%
+}
+
+/* HEADER */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(253, 253, 253);
+}
+
+.navbar-toggler {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    transition: color 0.8s ease, font-size 0.8s ease;
+}
+
+.nav-link:hover {
+    color: rgba(216, 215, 215, 0.616) !important;
+    font-size: large;
+    transition: 0.8s;
+}
+
+/* INDEX-BODY */
+
+.index {
+    margin: 3%;
+}
+
+.panel-inicio {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.parrafo-incio {
+    display: flex;
+    flex-direction: column;
+    max-width: 38vw;
+    text-align: justify;
+
+}
+
+.personal {
+    width: 600px;
+    padding: 10px;
+}
+
+.reconocimientos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    height: 1000px;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "premio-1 premio-2 premio-3"
+        "premio-4 premio-5 premio-6";
+}
+
+.premio-1 {
+    grid-area: premio-1;
+}
+
+.premio-2 {
+    grid-area: premio-2;
+}
+
+.premio3 {
+    grid-area: premio-3;
+}
+
+.premio-4 {
+    grid-area: premio-4;
+}
+
+.premio-5 {
+    grid-area: premio-5;
+}
+
+.premio-6 {
+    grid-area: premio-6;
+}
+
+.premio {
+    width: 300px;
+    filter: grayscale(100);
+}
+
+.texto-centrado {
+    text-align: center;
+    max-width: 300px;
+}
+
+/* OBRAS Y PROYECTOS-BODY */
+
+.proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "obra-1 obra-2 obra-3"
+        "obra-4 obra-5 obra-6";
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Obra 1 */
+.obra-1 {
+    grid-area: obra-1;
+    position: relative;
+}
+
+.obra-1 h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s;
+    color: white;
+    transition: all 0.6s;
+}
+
+.obra-1:hover h4 {
+    opacity: 1;
+}
+
+/* Obra 2 */
+.obra-2 {
+    grid-area: obra-2;
+    position: relative;
+}
+
+.obra-2 h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s;
+    color: white;
+    transition: all 0.6s;
+    text-align: center;
+}
+
+.obra-2:hover h4 {
+    opacity: 1;
+    text-align: center;
+}
+
+/* Obra 3 */
+.obra-3 {
+    grid-area: obra-3;
+    position: relative;
+}
+
+.obra-3 h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s;
+    color: white;
+    transition: all 0.6s;
+}
+
+.obra-3:hover h4 {
+    opacity: 1;
+    text-align: center;
+}
+
+/* Obra 4 */
+.obra-4 {
+    grid-area: obra-4;
+    position: relative;
+}
+
+.obra-4 h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s;
+    color: white;
+    transition: all 0.6s;
+}
+
+.obra-4:hover h4 {
+    opacity: 1;
+    text-align: center;
+}
+
+/* Obra 5 */
+.obra-5 {
+    grid-area: obra-5;
+    position: relative;
+}
+
+.obra-5 h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s;
+    color: white;
+    transition: all 0.6s;
+}
+
+.obra-5:hover h4 {
+    opacity: 1;
+    text-align: center;
+}
+
+/* Obra 6 */
+.obra-6 {
+    grid-area: obra-6;
+    position: relative;
+}
+
+.obra-6 h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s;
+    color: white;
+    transition: all 0.6s;
+}
+
+.obra-6:hover h4 {
+    opacity: 1;
+    text-align: center;
+}
+
+/* Imagenes-obras */
+.obras {
+    width: 25vw;
+    border: black solid 2px;
+    display: block;
+}
+
+.obras:hover {
+    filter: brightness(25%);
+    transition: 1s ease;
+}
+
+/* QUIENES SOMOS - BODY */
+.integrantes {
+    margin: 3%;
+}
+
+.staff {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 125vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "staff-1 staff-2"
+        "staff-3 staff-4"
+        "staff-5 staff-6";
+}
+
+.staff-1 {
+    grid-area: staff-1;
+}
+
+.staff-2 {
+    grid-area: staff-2;
+}
+
+.staff-3 {
+    grid-area: staff-3;
+}
+
+.staff-4 {
+    grid-area: staff-4;
+}
+
+.staff-5 {
+    grid-area: staff-5;
+}
+
+.staff-6 {
+    grid-area: staff-6;
+}
+
+.staff-foto {
+    width: 20vw;
+}
+
+.staff-interno {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    width: 42vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-staff {
+    text-align: left;
+    max-width: 20vw;
+    margin: 3%;
+}
+
+/* Objetivos-vision */
+.list-group-item {
+    text-align: left;
+}
+
+.vision-objetivos {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.objetivos {
+    max-width: 40vw;
+    text-align: justify;
+}
+
+.vision {
+    max-width: 40vw;
+    text-align: justify;
+}
+
+
+/* SERVICIOS-BODY */
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+/* CONTACTO-BODY */
+.section-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactos-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2%;
+    height: 40vh;
+}
+
+.contacto-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+}
+
+.iconos-c {
+    width: 2vw;
+}
+
+/* Mapa */
+.mapa {
+    margin: 2%;
+    filter: grayscale(100);
+    max-width: 60vw;
+    height: 45vh;
+}
+
+/* Formulario */
+.seccion-form {
+    height: auto;
+    margin: 4%;
+    padding: 2%;
+    background-color: rgb(240, 240, 240);
+}
+
+.formulario {
+    max-width: 35vw;
+}
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 2, 2);
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24vw;
+}
+
+.logo-f {
+    width: 100px;
+    margin: 5px;
+}
+
+.redes img {
+    width: 25px;
+    margin: 5px;
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+    color: white;
+    align-items: center;
+}
+
+.footer-2 h3 {
+    height: 35px;
+    margin: 20px;
+
+}
+
+.contacto-f {
+    text-align: left;
+}
+
+.contacto-f p {
+    padding: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* SECCION COPYRIGHT */
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.4);
+    height: 5vh;
+    padding: 5px;
+
+}
+
+.copyright a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    width: 7vw;
+}
+
+
+
+
+/* MEDIA Q*/
+@media (max-width: 425px) {
+
+    /* Servicios */
+    .servicios {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    /* Index */
+
+    .panel-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .parrafo-incio {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        text-align: left;
+    }
+
+    .personal {
+        width: 95vw;
+    }
+
+    .reconocimientos {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Obras y proyectos */
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .obras {
+        width: 65vw;
+        margin: 10px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-1 {
+        width: 50vw;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .footer-2 {
+        width: 50vw;
+    }
+
+    .contacto-f {
+        text-align: center;
+    }
+
+    .copyright a {
+        width: 23vw;
+    }
+}
