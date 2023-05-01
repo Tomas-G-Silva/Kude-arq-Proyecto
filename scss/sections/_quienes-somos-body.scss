@@ -22,12 +22,19 @@
 
         img {
             width: 20vw;
+            margin-right: 2px;
+            @extend .borde;
+            @extend .shadow;
         }
 
         div {
             text-align: left;
             max-width: 20vw;
             margin: 3%;
+
+            h6 {
+                font-size: larger;
+            }
         }
     }
 }
@@ -59,3 +66,47 @@
 
 }
 
+
+
+@media (max-width: 425px) {
+    .integrantes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        article {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            img {
+                width: 85%;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                max-width: 85%;
+            }
+        }
+    }
+
+    .vision {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        article {
+            width: 85%;
+            text-align: center;
+            margin: 5px;
+        }
+
+        img {
+            width: 85%;
+        }
+    }
+}

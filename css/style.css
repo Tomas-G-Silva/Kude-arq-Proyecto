@@ -1,8 +1,11 @@
-.shadow, .index .panel-inicio img, .index .reconocimientos img, .servicios a article {
+.shadow, .index .panel-inicio img, .index .reconocimientos img, .proyectos div a img, .servicios a article, .integrantes article img {
   box-shadow: 8px 8px 15px #272727; }
 
 .filtro-gris, .section-c .mapa, .vision img {
   filter: grayscale(100%); }
+
+.borde, .proyectos div a img, .integrantes article img {
+  border: black solid 2px; }
 
 * {
   margin: 0px;
@@ -73,19 +76,16 @@ h1 {
       margin: 20px; }
 
 @media (max-width: 425px) {
-  .panel-inicio {
+  .index .panel-inicio {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto; }
-  .parrafo-incio {
-    display: flex;
-    flex-direction: column;
-    max-width: 100vw;
-    text-align: left; }
-  .personal {
-    width: 95vw; }
-  .reconocimientos {
+    flex-direction: column; }
+    .index .panel-inicio div {
+      max-width: 100vw;
+      text-align: left;
+      margin: 10px; }
+    .index .panel-inicio img {
+      width: 400px; }
+  .index .reconocimientos {
     display: flex;
     flex-direction: column;
     height: auto; } }
@@ -108,7 +108,6 @@ h1 {
       opacity: 1; }
     .proyectos div a img {
       width: 25vw;
-      border: black solid 2px;
       display: block; }
     .proyectos div a h4 {
       position: absolute;
@@ -126,9 +125,10 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     height: auto; }
-  .obras {
-    width: 65vw;
-    margin: 10px; } }
+    .proyectos div {
+      margin: 20px; }
+      .proyectos div a img {
+        width: 100%; } }
 
 .servicios {
   display: flex;
@@ -181,6 +181,19 @@ h1 {
   .seccion-form form {
     max-width: 35vw; }
 
+@media (max-width: 425px) {
+  .section-c {
+    display: flex;
+    flex-direction: column; }
+    .section-c article div img {
+      width: 50px; }
+    .section-c article div p {
+      font-size: large; }
+    .section-c .mapa {
+      max-width: 85%; }
+  .seccion-form form {
+    max-width: 87vw; } }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -214,17 +227,16 @@ h1 {
 
 @media (max-width: 425px) {
   .footer {
-    flex-direction: column; }
-  .footer-1 {
-    width: 50vw;
-    padding: 10px;
-    margin: 5px; }
-  .footer-2 {
-    width: 50vw; }
-  .contacto-f {
-    text-align: center; }
-  .copyright a {
-    width: 23vw; } }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .footer .f1 {
+      width: 100%;
+      margin: 10px; }
+    .footer .f2 {
+      width: 100%; }
+      .footer .f2 div {
+        text-align: center; } }
 
 .copyright {
   display: flex;
@@ -238,6 +250,13 @@ h1 {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4);
     width: 7vw; }
+
+@media (max-width: 425px) {
+  .copyright {
+    display: flex;
+    justify-content: space-around; }
+    .copyright a {
+      width: auto; } }
 
 .integrantes {
   margin: 3%;
@@ -257,11 +276,14 @@ h1 {
     justify-content: space-between;
     align-items: center; }
     .integrantes article img {
-      width: 20vw; }
+      width: 20vw;
+      margin-right: 2px; }
     .integrantes article div {
       text-align: left;
       max-width: 20vw;
       margin: 3%; }
+      .integrantes article div h6 {
+        font-size: larger; }
 
 .vision {
   margin: 3%;
@@ -280,3 +302,32 @@ h1 {
       text-align: justify; }
   .vision img {
     width: 60%; }
+
+@media (max-width: 425px) {
+  .integrantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto; }
+    .integrantes article {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .integrantes article img {
+        width: 85%; }
+      .integrantes article div {
+        display: flex;
+        flex-direction: column;
+        max-width: 85%; }
+  .vision {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    .vision article {
+      width: 85%;
+      text-align: center;
+      margin: 5px; }
+    .vision img {
+      width: 85%; } }

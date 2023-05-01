@@ -48,31 +48,23 @@
 
 
 
-
-
-
-
-
 @media (max-width: 425px) {
     .footer {
+        display: flex;
         flex-direction: column;
-    }
+        justify-content: center;
 
-    .footer-1 {
-        width: 50vw;
-        padding: 10px;
-        margin: 5px;
-    }
+        .f1 {
+            width: 100%;
+            margin: 10px;
+        }
 
-    .footer-2 {
-        width: 50vw;
-    }
+        .f2 {
+            width: 100%;
 
-    .contacto-f {
-        text-align: center;
-    }
-
-    .copyright a {
-        width: 23vw;
+            div {
+                text-align: center;
+            }
+        }
     }
 }

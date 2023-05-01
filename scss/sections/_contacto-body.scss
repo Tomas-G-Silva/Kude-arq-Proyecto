@@ -31,8 +31,6 @@
     }
 }
 
-
-
 .seccion-form {
     height: auto;
     margin: 4%;
@@ -41,5 +39,35 @@
 
     form {
         max-width: 35vw;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .section-c {
+        display: flex;
+        flex-direction: column;
+
+        article {
+            div {
+                img {
+                    width: 50px;
+                }
+
+                p {
+                    font-size: large;
+                }
+            }
+        }
+
+        .mapa {
+            max-width: 85%;
+        }
+    }
+
+    .seccion-form {
+        form {
+            max-width: 87vw;
+        }
     }
 }

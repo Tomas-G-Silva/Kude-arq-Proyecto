@@ -23,8 +23,9 @@
 
             img {
                 width: 25vw;
-                border: black solid 2px;
+                @extend .borde;
                 display: block;
+                @extend .shadow;
             }
 
             h4 {
@@ -41,17 +42,24 @@
     }
 }
 
-@media (max-width: 425px) {
 
+@media (max-width: 425px) {
     .proyectos {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: auto;
-    }
 
-    .obras {
-        width: 65vw;
-        margin: 10px;
+        div {
+            margin: 20px;
+
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
     }
 }
