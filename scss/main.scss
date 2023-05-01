@@ -1,6 +1,9 @@
 //VARIABLE//
-@import "./utilities/reset";
 @import "./utilities/colours";
+@import "./utilities/extend-mixin";
+
+//RESETEO//
+@import "./utilities/reset";
 
 //SECCIONES//
 @import "./sections/header";
@@ -11,5 +14,3 @@
 @import "./sections/footer";
 @import "./sections/copyright";
 @import "./sections/quienes-somos-body";
-
-

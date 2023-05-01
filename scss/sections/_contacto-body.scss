@@ -25,7 +25,7 @@
 
     .mapa {
         margin: 2%;
-        filter: grayscale(100);
+        @extend .filtro-gris;
         max-width: 60vw;
         height: 45vh;
     }

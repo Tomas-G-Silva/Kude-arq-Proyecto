@@ -1,73 +1,75 @@
 .index {
     margin: 3%;
+
+    .panel-inicio {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            max-width: 38vw;
+            text-align: justify;
+        }
+
+        img {
+            width: 600px;
+            padding: 0px;
+            @extend .shadow;
+        }
+    }
+
+    .reconocimientos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        height: 1000px;
+        justify-items: center;
+        align-items: center;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "premio-1 premio-2 premio-3"
+            "premio-4 premio-5 premio-6";
+
+        img {
+            width: 300px;
+            filter: grayscale(100);
+            @extend .shadow;
+        }
+
+        div {
+            text-align: center;
+            max-width: 300px;
+            margin: 20px;
+        }
+    }
 }
 
-.panel-inicio {
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-}
+// .premio-1 {
+//     grid-area: premio-1;
+// }
 
-.parrafo-incio {
-    display: flex;
-    flex-direction: column;
-    max-width: 38vw;
-    text-align: justify;
+// .premio-2 {
+//     grid-area: premio-2;
+// }
 
-}
+// .premio3 {
+//     grid-area: premio-3;
+// }
 
-.personal {
-    width: 600px;
-    padding: 10px;
-}
+// .premio-4 {
+//     grid-area: premio-4;
+// }
 
-.reconocimientos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    height: 1000px;
-    justify-items: center;
-    align-items: center;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "premio-1 premio-2 premio-3"
-        "premio-4 premio-5 premio-6";
-}
+// .premio-5 {
+//     grid-area: premio-5;
+// }
 
-.premio-1 {
-    grid-area: premio-1;
-}
-
-.premio-2 {
-    grid-area: premio-2;
-}
-
-.premio3 {
-    grid-area: premio-3;
-}
-
-.premio-4 {
-    grid-area: premio-4;
-}
-
-.premio-5 {
-    grid-area: premio-5;
-}
-
-.premio-6 {
-    grid-area: premio-6;
-}
-
-.premio {
-    width: 300px;
-    filter: grayscale(100);
-}
-
-.texto-centrado {
-    text-align: center;
-    max-width: 300px;
-}
+// .premio-6 {
+//     grid-area: premio-6;
+// }
 
 
 @media (max-width: 425px) {

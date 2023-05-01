@@ -1,8 +1,5 @@
 .integrantes {
     margin: 3%;
-}
-
-.staff {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -15,67 +12,50 @@
         "staff-1 staff-2"
         "staff-3 staff-4"
         "staff-5 staff-6";
-}
 
-.staff-1 {
-    grid-area: staff-1;
-}
+    article {
+        background-color: $gris-claro;
+        display: flex;
+        width: 42vw;
+        justify-content: space-between;
+        align-items: center;
 
-.staff-2 {
-    grid-area: staff-2;
-}
+        img {
+            width: 20vw;
+        }
 
-.staff-3 {
-    grid-area: staff-3;
-}
-
-.staff-4 {
-    grid-area: staff-4;
-}
-
-.staff-5 {
-    grid-area: staff-5;
-}
-
-.staff-6 {
-    grid-area: staff-6;
-}
-
-.staff-foto {
-    width: 20vw;
-}
-
-.staff-interno {
-    background-color: $gris-claro;
-    display: flex;
-    width: 42vw;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.texto-staff {
-    text-align: left;
-    max-width: 20vw;
-    margin: 3%;
-}
-
-/* Objetivos-vision */
-.list-group-item {
-    text-align: left;
-}
-
-.vision-objetivos {
-    display: flex;
-    justify-content: space-between;
-    margin: 5%;
-}
-
-.objetivos {
-    max-width: 40vw;
-    text-align: justify;
+        div {
+            text-align: left;
+            max-width: 20vw;
+            margin: 3%;
+        }
+    }
 }
 
 .vision {
-    max-width: 40vw;
-    text-align: justify;
+    margin: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+    background-color: $gris-claro;
+
+    article {
+        margin: 10px;
+        width: 30%;
+
+        p {
+            font-size: large;
+            text-align: justify;
+        }
+    }
+
+    img {
+        width: 60%;
+        @extend .filtro-gris;
+    }
+
 }
+

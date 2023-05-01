@@ -4,159 +4,42 @@
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "obra-1 obra-2 obra-3"
-        "obra-4 obra-5 obra-6";
     height: 100vh;
     align-items: center;
     justify-items: center;
+
+    div {
+        position: relative;
+
+        a {
+            &:hover img {
+                filter: brightness(25%);
+                transition: 1s ease;
+            }
+
+            &:hover h4 {
+                opacity: 1;
+            }
+
+            img {
+                width: 25vw;
+                border: black solid 2px;
+                display: block;
+            }
+
+            h4 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.8s;
+                color: $blanco;
+                transition: all 0.6s;
+            }
+        }
+    }
 }
-
-/* Obra 1 */
-.obra-1 {
-    grid-area: obra-1;
-    position: relative;
-}
-
-.obra-1 h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.8s;
-    color: $blanco;
-    transition: all 0.6s;
-}
-
-.obra-1:hover h4 {
-    opacity: 1;
-}
-
-/* Obra 2 */
-.obra-2 {
-    grid-area: obra-2;
-    position: relative;
-}
-
-.obra-2 h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.8s;
-    color: $blanco;
-    transition: all 0.6s;
-    text-align: center;
-}
-
-.obra-2:hover h4 {
-    opacity: 1;
-    text-align: center;
-}
-
-/* Obra 3 */
-.obra-3 {
-    grid-area: obra-3;
-    position: relative;
-}
-
-.obra-3 h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.8s;
-    color: $blanco;
-    transition: all 0.6s;
-}
-
-.obra-3:hover h4 {
-    opacity: 1;
-    text-align: center;
-}
-
-/* Obra 4 */
-.obra-4 {
-    grid-area: obra-4;
-    position: relative;
-}
-
-.obra-4 h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.8s;
-    color: $blanco;
-    transition: all 0.6s;
-}
-
-.obra-4:hover h4 {
-    opacity: 1;
-    text-align: center;
-}
-
-/* Obra 5 */
-.obra-5 {
-    grid-area: obra-5;
-    position: relative;
-}
-
-.obra-5 h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.8s;
-    color: $blanco;
-    transition: all 0.6s;
-}
-
-.obra-5:hover h4 {
-    opacity: 1;
-    text-align: center;
-}
-
-/* Obra 6 */
-.obra-6 {
-    grid-area: obra-6;
-    position: relative;
-}
-
-.obra-6 h4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.8s;
-    color: $blanco;
-    transition: all 0.6s;
-}
-
-.obra-6:hover h4 {
-    opacity: 1;
-    text-align: center;
-}
-
-/* Imagenes-obras */
-.obras {
-    width: 25vw;
-    border: black solid 2px;
-    display: block;
-}
-
-.obras:hover {
-    filter: brightness(25%);
-    transition: 1s ease;
-}
-
-
 
 @media (max-width: 425px) {
 

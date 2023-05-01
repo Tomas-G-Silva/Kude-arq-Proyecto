@@ -1,3 +1,9 @@
+.shadow, .index .panel-inicio img, .index .reconocimientos img, .servicios a article {
+  box-shadow: 8px 8px 15px #272727; }
+
+.filtro-gris, .section-c .mapa, .vision img {
+  filter: grayscale(100%); }
+
 * {
   margin: 0px;
   padding: 0; }
@@ -36,58 +42,35 @@ h1 {
 
 .index {
   margin: 3%; }
-
-.panel-inicio {
-  display: flex;
-  justify-content: space-between;
-  height: auto; }
-
-.parrafo-incio {
-  display: flex;
-  flex-direction: column;
-  max-width: 38vw;
-  text-align: justify; }
-
-.personal {
-  width: 600px;
-  padding: 10px; }
-
-.reconocimientos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  height: 1000px;
-  justify-items: center;
-  align-items: center;
-  grid-auto-flow: row;
-  grid-template-areas: "premio-1 premio-2 premio-3" "premio-4 premio-5 premio-6"; }
-
-.premio-1 {
-  grid-area: premio-1; }
-
-.premio-2 {
-  grid-area: premio-2; }
-
-.premio3 {
-  grid-area: premio-3; }
-
-.premio-4 {
-  grid-area: premio-4; }
-
-.premio-5 {
-  grid-area: premio-5; }
-
-.premio-6 {
-  grid-area: premio-6; }
-
-.premio {
-  width: 300px;
-  filter: grayscale(100); }
-
-.texto-centrado {
-  text-align: center;
-  max-width: 300px; }
+  .index .panel-inicio {
+    display: flex;
+    justify-content: space-between;
+    height: auto; }
+    .index .panel-inicio div {
+      display: flex;
+      flex-direction: column;
+      max-width: 38vw;
+      text-align: justify; }
+    .index .panel-inicio img {
+      width: 600px;
+      padding: 0px; }
+  .index .reconocimientos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    height: 1000px;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-template-areas: "premio-1 premio-2 premio-3" "premio-4 premio-5 premio-6"; }
+    .index .reconocimientos img {
+      width: 300px;
+      filter: grayscale(100); }
+    .index .reconocimientos div {
+      text-align: center;
+      max-width: 300px;
+      margin: 20px; }
 
 @media (max-width: 425px) {
   .panel-inicio {
@@ -113,134 +96,29 @@ h1 {
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "obra-1 obra-2 obra-3" "obra-4 obra-5 obra-6";
   height: 100vh;
   align-items: center;
   justify-items: center; }
-
-/* Obra 1 */
-.obra-1 {
-  grid-area: obra-1;
-  position: relative; }
-
-.obra-1 h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.8s;
-  color: white;
-  transition: all 0.6s; }
-
-.obra-1:hover h4 {
-  opacity: 1; }
-
-/* Obra 2 */
-.obra-2 {
-  grid-area: obra-2;
-  position: relative; }
-
-.obra-2 h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.8s;
-  color: white;
-  transition: all 0.6s;
-  text-align: center; }
-
-.obra-2:hover h4 {
-  opacity: 1;
-  text-align: center; }
-
-/* Obra 3 */
-.obra-3 {
-  grid-area: obra-3;
-  position: relative; }
-
-.obra-3 h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.8s;
-  color: white;
-  transition: all 0.6s; }
-
-.obra-3:hover h4 {
-  opacity: 1;
-  text-align: center; }
-
-/* Obra 4 */
-.obra-4 {
-  grid-area: obra-4;
-  position: relative; }
-
-.obra-4 h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.8s;
-  color: white;
-  transition: all 0.6s; }
-
-.obra-4:hover h4 {
-  opacity: 1;
-  text-align: center; }
-
-/* Obra 5 */
-.obra-5 {
-  grid-area: obra-5;
-  position: relative; }
-
-.obra-5 h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.8s;
-  color: white;
-  transition: all 0.6s; }
-
-.obra-5:hover h4 {
-  opacity: 1;
-  text-align: center; }
-
-/* Obra 6 */
-.obra-6 {
-  grid-area: obra-6;
-  position: relative; }
-
-.obra-6 h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.8s;
-  color: white;
-  transition: all 0.6s; }
-
-.obra-6:hover h4 {
-  opacity: 1;
-  text-align: center; }
-
-/* Imagenes-obras */
-.obras {
-  width: 25vw;
-  border: black solid 2px;
-  display: block; }
-
-.obras:hover {
-  filter: brightness(25%);
-  transition: 1s ease; }
+  .proyectos div {
+    position: relative; }
+    .proyectos div a:hover img {
+      filter: brightness(25%);
+      transition: 1s ease; }
+    .proyectos div a:hover h4 {
+      opacity: 1; }
+    .proyectos div a img {
+      width: 25vw;
+      border: black solid 2px;
+      display: block; }
+    .proyectos div a h4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.8s;
+      color: white;
+      transition: all 0.6s; }
 
 @media (max-width: 425px) {
   .proyectos {
@@ -256,6 +134,13 @@ h1 {
   display: flex;
   justify-content: space-around;
   margin: 3%; }
+  .servicios a {
+    text-decoration: none; }
+    .servicios a article {
+      transition: 0.8s ease; }
+      .servicios a article:hover {
+        scale: 1.1;
+        transition: 0.8s; }
 
 @media (max-width: 425px) {
   .servicios {
@@ -285,7 +170,6 @@ h1 {
         width: 2vw; }
   .section-c .mapa {
     margin: 2%;
-    filter: grayscale(100);
     max-width: 60vw;
     height: 45vh; }
 
@@ -356,9 +240,7 @@ h1 {
     width: 7vw; }
 
 .integrantes {
-  margin: 3%; }
-
-.staff {
+  margin: 3%;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -368,53 +250,33 @@ h1 {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "staff-1 staff-2" "staff-3 staff-4" "staff-5 staff-6"; }
-
-.staff-1 {
-  grid-area: staff-1; }
-
-.staff-2 {
-  grid-area: staff-2; }
-
-.staff-3 {
-  grid-area: staff-3; }
-
-.staff-4 {
-  grid-area: staff-4; }
-
-.staff-5 {
-  grid-area: staff-5; }
-
-.staff-6 {
-  grid-area: staff-6; }
-
-.staff-foto {
-  width: 20vw; }
-
-.staff-interno {
-  background-color: #f0f0f0;
-  display: flex;
-  width: 42vw;
-  justify-content: space-between;
-  align-items: center; }
-
-.texto-staff {
-  text-align: left;
-  max-width: 20vw;
-  margin: 3%; }
-
-/* Objetivos-vision */
-.list-group-item {
-  text-align: left; }
-
-.vision-objetivos {
-  display: flex;
-  justify-content: space-between;
-  margin: 5%; }
-
-.objetivos {
-  max-width: 40vw;
-  text-align: justify; }
+  .integrantes article {
+    background-color: #f0f0f0;
+    display: flex;
+    width: 42vw;
+    justify-content: space-between;
+    align-items: center; }
+    .integrantes article img {
+      width: 20vw; }
+    .integrantes article div {
+      text-align: left;
+      max-width: 20vw;
+      margin: 3%; }
 
 .vision {
-  max-width: 40vw;
-  text-align: justify; }
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: auto;
+  overflow: hidden;
+  background-color: #f0f0f0; }
+  .vision article {
+    margin: 10px;
+    width: 30%; }
+    .vision article p {
+      font-size: large;
+      text-align: justify; }
+  .vision img {
+    width: 60%; }
