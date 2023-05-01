@@ -1,0 +1,81 @@
+.integrantes {
+    margin: 3%;
+}
+
+.staff {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 125vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "staff-1 staff-2"
+        "staff-3 staff-4"
+        "staff-5 staff-6";
+}
+
+.staff-1 {
+    grid-area: staff-1;
+}
+
+.staff-2 {
+    grid-area: staff-2;
+}
+
+.staff-3 {
+    grid-area: staff-3;
+}
+
+.staff-4 {
+    grid-area: staff-4;
+}
+
+.staff-5 {
+    grid-area: staff-5;
+}
+
+.staff-6 {
+    grid-area: staff-6;
+}
+
+.staff-foto {
+    width: 20vw;
+}
+
+.staff-interno {
+    background-color: $gris-claro;
+    display: flex;
+    width: 42vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-staff {
+    text-align: left;
+    max-width: 20vw;
+    margin: 3%;
+}
+
+/* Objetivos-vision */
+.list-group-item {
+    text-align: left;
+}
+
+.vision-objetivos {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.objetivos {
+    max-width: 40vw;
+    text-align: justify;
+}
+
+.vision {
+    max-width: 40vw;
+    text-align: justify;
+}

@@ -1,0 +1,26 @@
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: $blanco;
+}
+
+.navbar-toggler {
+    background-color: $blanco;
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    transition: color 0.8s ease, font-size 0.8s ease;
+}
+
+.nav-link:hover {
+    color: rgba(216, 215, 215, 0.616) !important;
+    font-size: large;
+    transition: 0.8s;
+}

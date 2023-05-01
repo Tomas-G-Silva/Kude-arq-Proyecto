@@ -1,0 +1,16 @@
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: $gris;
+    height: 5vh;
+    padding: 5px;
+
+}
+
+.copyright a {
+    text-decoration: none;
+    color: $gris;
+    width: 7vw;
+}
