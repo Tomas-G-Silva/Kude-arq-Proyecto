@@ -68,3 +68,31 @@
     text-align: center;
     max-width: 300px;
 }
+
+
+@media (max-width: 425px) {
+    .panel-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .parrafo-incio {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        text-align: left;
+    }
+
+    .personal {
+        width: 95vw;
+    }
+
+    .reconocimientos {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}

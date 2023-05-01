@@ -155,3 +155,20 @@
     filter: brightness(25%);
     transition: 1s ease;
 }
+
+
+
+@media (max-width: 425px) {
+
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .obras {
+        width: 65vw;
+        margin: 10px;
+    }
+}

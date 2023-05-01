@@ -2,44 +2,44 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2%;
+        height: 40vh;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 10vh;
+
+            img {
+                width: 2vw;
+            }
+        }
+    }
+
+    .mapa {
+        margin: 2%;
+        filter: grayscale(100);
+        max-width: 60vw;
+        height: 45vh;
+    }
 }
 
-.contactos-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 2%;
-    height: 40vh;
-}
 
-.contacto-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 10vh;
-}
 
-.iconos-c {
-    width: 2vw;
-}
-
-/* Mapa */
-.mapa {
-    margin: 2%;
-    filter: grayscale(100);
-    max-width: 60vw;
-    height: 45vh;
-}
-
-/* Formulario */
 .seccion-form {
     height: auto;
     margin: 4%;
     padding: 2%;
     background-color: $gris-claro;
-}
 
-.formulario {
-    max-width: 35vw;
+    form {
+        max-width: 35vw;
+    }
 }
