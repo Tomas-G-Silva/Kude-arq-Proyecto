@@ -53,9 +53,9 @@ h1 {
       display: flex;
       flex-direction: column;
       max-width: 38vw;
-      text-align: justify; }
+      text-align: left; }
     .index .panel-inicio img {
-      width: 600px;
+      width: 50%;
       padding: 0px; }
   .index .reconocimientos {
     display: grid;
@@ -68,7 +68,7 @@ h1 {
     grid-auto-flow: row;
     grid-template-areas: "premio-1 premio-2 premio-3" "premio-4 premio-5 premio-6"; }
     .index .reconocimientos img {
-      width: 300px;
+      width: 95%;
       filter: grayscale(100); }
     .index .reconocimientos div {
       text-align: center;
@@ -96,7 +96,7 @@ h1 {
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  height: 100vh;
+  height: 600px;
   align-items: center;
   justify-items: center; }
   .proyectos div {
@@ -133,10 +133,13 @@ h1 {
 .servicios {
   display: flex;
   justify-content: space-around;
-  margin: 3%; }
+  margin: 3%;
+  height: 400px; }
   .servicios a {
     text-decoration: none; }
     .servicios a article {
+      width: 25vw;
+      max-height: 400px;
       transition: 0.8s ease; }
       .servicios a article:hover {
         scale: 1.1;
@@ -148,7 +151,13 @@ h1 {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 120vh; } }
+    height: 1000px; }
+    .servicios a {
+      display: flex;
+      justify-content: center; }
+      .servicios a article {
+        width: 85%;
+        max-height: 350px; } }
 
 .section-c {
   display: flex;
@@ -177,9 +186,14 @@ h1 {
   height: auto;
   margin: 4%;
   padding: 2%;
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .seccion-form form {
-    max-width: 35vw; }
+    width: 60%; }
+    .seccion-form form button {
+      width: 40%; }
 
 @media (max-width: 425px) {
   .section-c {
@@ -192,7 +206,7 @@ h1 {
     .section-c .mapa {
       max-width: 85%; }
   .seccion-form form {
-    max-width: 87vw; } }
+    width: 75%; } }
 
 .footer {
   display: flex;
@@ -249,7 +263,7 @@ h1 {
   .copyright a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4);
-    width: 7vw; }
+    width: 10%; }
 
 @media (max-width: 425px) {
   .copyright {
@@ -263,7 +277,7 @@ h1 {
   display: grid;
   justify-items: center;
   align-items: center;
-  height: 125vh;
+  height: 1500px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -290,8 +304,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 200px;
-  width: auto;
+  height: 300px;
   overflow: hidden;
   background-color: #f0f0f0; }
   .vision article {
@@ -303,24 +316,48 @@ h1 {
   .vision img {
     width: 60%; }
 
+@media (max-width: 1024px) {
+  .integrantes {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    .integrantes article {
+      display: flex;
+      width: 70%;
+      justify-content: space-around;
+      align-items: center; }
+      .integrantes article div {
+        max-width: 50%; }
+  .vision {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    .vision article {
+      width: 65%;
+      text-align: center; }
+      .vision article p {
+        text-align: center; }
+    .vision img {
+      width: 65%; } }
+
 @media (max-width: 425px) {
   .integrantes {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: auto; }
     .integrantes article {
       width: 400px;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
+      flex-direction: column; }
       .integrantes article img {
-        width: 85%; }
+        width: 75%; }
       .integrantes article div {
         display: flex;
         flex-direction: column;
-        max-width: 85%; }
+        max-width: 85%;
+        text-align: center; }
   .vision {
     display: flex;
     flex-direction: column;

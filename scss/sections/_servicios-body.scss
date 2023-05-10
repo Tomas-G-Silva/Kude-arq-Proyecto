@@ -2,11 +2,14 @@
     display: flex;
     justify-content: space-around;
     margin: 3%;
+    height: 400px;
 
     a {
         text-decoration: none;
 
         article {
+            width: 25vw;
+            max-height: 400px;
             transition: 0.8s ease;
             @extend .shadow;
 
@@ -26,6 +29,16 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        height: 120vh;
+        height: 1000px;
+
+        a {
+            display: flex;
+            justify-content: center;
+
+            article {
+                width: 85%;
+                max-height: 350px;
+            }
+        }
     }
 }

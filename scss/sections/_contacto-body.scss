@@ -36,9 +36,16 @@
     margin: 4%;
     padding: 2%;
     background-color: $gris-claro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     form {
-        max-width: 35vw;
+        width: 60%;
+
+        button {
+            width: 40%;
+        }
     }
 }
 
@@ -67,7 +74,7 @@
 
     .seccion-form {
         form {
-            max-width: 87vw;
+            width: 75%;
         }
     }
 }

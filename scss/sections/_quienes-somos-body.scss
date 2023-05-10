@@ -3,7 +3,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    height: 125vh;
+    height: 1500px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -44,8 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 200px;
-    width: auto;
+    height: 300px;
     overflow: hidden;
     background-color: $gris-claro;
 
@@ -68,28 +67,67 @@
 
 
 
+@media (max-width: 1024px) {
+    .integrantes {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        article {
+            display: flex;
+            width: 70%;
+            justify-content: space-around;
+            align-items: center;
+
+            div {
+                max-width: 50%;
+            }
+        }
+    }
+
+    .vision {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        article {
+            width: 65%;
+            text-align: center;
+
+            p {
+                text-align: center;
+            }
+        }
+        img{
+            width: 65%;
+        }
+    }
+}
+
+
+
 @media (max-width: 425px) {
     .integrantes {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         height: auto;
 
         article {
             width: 400px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
 
             img {
-                width: 85%;
+                width: 75%;
             }
 
             div {
                 display: flex;
                 flex-direction: column;
                 max-width: 85%;
+                text-align: center;
             }
         }
     }
