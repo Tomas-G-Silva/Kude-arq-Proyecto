@@ -1,5 +1,7 @@
 .shadow {
     box-shadow: 8px 8px 15px rgb(39, 39, 39);
+    border: black 1px solid;
+    border-radius: 7px;
 }
 
 .filtro-gris {
@@ -8,4 +10,10 @@
 
 .borde{
     border: black solid 2px;
+}
+
+.palabras-resaltadas{
+    color: white;
+    transform: scale(1.5);
+    background-color: rgba(0, 0, 0, 0.50) ;
 }

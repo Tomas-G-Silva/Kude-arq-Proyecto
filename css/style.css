@@ -1,11 +1,18 @@
 .shadow, .index .panel-inicio img, .index .reconocimientos img, .proyectos div a img, .servicios a article, .integrantes article img {
-  box-shadow: 8px 8px 15px #272727; }
+  box-shadow: 8px 8px 15px #272727;
+  border: black 1px solid;
+  border-radius: 7px; }
 
 .filtro-gris, .section-c .mapa, .vision img {
   filter: grayscale(100%); }
 
 .borde, .proyectos div a img, .integrantes article img {
   border: black solid 2px; }
+
+.palabras-resaltadas, .carousel-caption h5 {
+  color: white;
+  transform: scale(1.5);
+  background-color: rgba(0, 0, 0, 0.5); }
 
 * {
   margin: 0px;
@@ -55,7 +62,7 @@ h1 {
       max-width: 38vw;
       text-align: left; }
     .index .panel-inicio img {
-      width: 50%;
+      width: 40%;
       padding: 0px; }
   .index .reconocimientos {
     display: grid;
