@@ -1,6 +1,9 @@
-.carousel-caption {
-    h5 {
-        @extend .palabras-resaltadas;
+.carousel{
+    @extend.entrada-arriba;
+    .carousel-caption {
+        h5 {
+            @extend .palabras-resaltadas;
+        }
     }
 }
 

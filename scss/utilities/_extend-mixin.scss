@@ -17,3 +17,10 @@
     transform: scale(1.5);
     background-color: rgba(0, 0, 0, 0.50) ;
 }
+
+//ANIMACIONES//
+.entrada-arriba{
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+

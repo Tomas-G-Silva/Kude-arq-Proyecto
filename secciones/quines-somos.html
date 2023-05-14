@@ -9,6 +9,9 @@
     <!-- BOOSTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS SHEET -->
     <link rel="stylesheet" href="../css/style.css">
     <title>KUDE | ¿QUIENES SOMOS? </title>
@@ -51,14 +54,14 @@
     <main>
         <!-- BANNER Y TITULO -->
         <img class="banner" src="../recursos/img/quienes-somos/banner-quines-somos.jpg" alt="banner-quienes-somos">
-        <h1>¿QUIENES SOMOS?</h1>
+        <h1 data-aos="fade-left" data-aos-duration="2000">¿QUIENES SOMOS?</h1>
 
 
         <!-- INTEGRANTES -->
         <section class="integrantes">
             <article>
-                <img src="../recursos/img/quienes-somos/staff-1.jpg" alt="persona-1">
-                <div>
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../recursos/img/quienes-somos/staff-1.jpg" alt="persona-1">
+                <div data-aos="fade-left" data-aos-duration="2000">
                     <h6>Arq Analia Gonzalez</h6>
                     <p>Fundadora y líder del estudio de arquitectura. Tiene una sólida formación en diseño
                         arquitectónico y es conocida por su enfoque innovador y creativo en el diseño. También
@@ -67,8 +70,8 @@
                 </div>
             </article>
             <article>
-                <img src="../recursos/img/quienes-somos/staff-2.jpg" alt="persona-2">
-                <div>
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../recursos/img/quienes-somos/staff-2.jpg" alt="persona-2">
+                <div data-aos="fade-left" data-aos-duration="2000">
                     <h6>Arq Carlos Mancilla</h6>
                     <p>Recién graduado, está ansioso por aprender y desarrollar sus habilidades en el diseño y
                         construcción. Trabaja en proyectos de diversos tamaños y se esfuerza por aportar nuevas
@@ -77,8 +80,8 @@
                 </div>
             </article>
             <article>
-                <img src="../recursos/img/quienes-somos/staff-3.jpg" alt="persona-3">
-                <div>
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../recursos/img/quienes-somos/staff-3.jpg" alt="persona-3">
+                <div data-aos="fade-left" data-aos-duration="2000">
                     <h6>Arq Juan Freeman</h6>
                     <p>Es responsable de la gestión de proyectos y trabaja estrechamente con los contratistas y
                         proveedores para garantizar que el proyecto se complete a tiempo y dentro del
@@ -87,8 +90,8 @@
                 </div>
             </article>
             <article>
-                <img src="../recursos/img/quienes-somos/staff-5.jpg" alt="persona-4">
-                <div>
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../recursos/img/quienes-somos/staff-5.jpg" alt="persona-4">
+                <div data-aos="fade-left" data-aos-duration="2000">
                     <h6>Arq Sofia Edwards</h6>
                     <p>Se asegura de que cada proyecto del estudio tenga un enfoque consciente del medio
                         ambiente, utilizando materiales y técnicas de construcción ecológicas. También es una
@@ -97,16 +100,16 @@
                 </div>
             </article>
             <article>
-                <img src="../recursos/img/quienes-somos/staff-4.jpg" alt="persona-5">
-                <div>
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../recursos/img/quienes-somos/staff-4.jpg" alt="persona-5">
+                <div data-aos="fade-left" data-aos-duration="2000">
                     <h6>Arq Julian Garza</h6>
                     <p>Es responsable del área de diseño y pliegos de obra. Siempre aporta actualidad y belleza
                         a nuestros proyectos.</p>
                 </div>
             </article>
             <article>
-                <img src="../recursos/img/quienes-somos/staff-6.jpg" alt="persona-6">
-                <div>
+                <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../recursos/img/quienes-somos/staff-6.jpg" alt="persona-6">
+                <div data-aos="fade-left" data-aos-duration="2000">
                     <h6>Arq Marcos Anders</h6>
                     <p>Tiene una amplia experiencia en el diseño y construcción de proyectos comerciales y
                         residenciales de gran escala. Es un experto en software de modelado 3D y utiliza su
@@ -117,7 +120,7 @@
         </section>
 
         <!-- VISION -->
-        <section class="vision">
+        <section data-aos="fade-up" data-aos-duration="2000" class="vision">
             <article>
                 <h2>NUESTRA VISIÓN</h2>
                 <p>Nuestra visión es crear diseños arquitectónicos que no solo sean estéticamente hermosos, sino que
@@ -161,6 +164,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <!-- ANIMATE -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+        });
+    </script>
 </body>
 
 </html>

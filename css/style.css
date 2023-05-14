@@ -9,10 +9,14 @@
 .borde, .proyectos div a img, .integrantes article img {
   border: black solid 2px; }
 
-.palabras-resaltadas, .carousel-caption h5 {
+.palabras-resaltadas, .carousel .carousel-caption h5 {
   color: white;
   transform: scale(1.5);
   background-color: rgba(0, 0, 0, 0.5); }
+
+.entrada-arriba, .banner, .carousel {
+  animation: fadeInDown;
+  animation-duration: 1s; }
 
 * {
   margin: 0px;
@@ -109,13 +113,14 @@ h1 {
   .proyectos div {
     position: relative; }
     .proyectos div a:hover img {
-      filter: brightness(25%);
-      transition: 1s ease; }
+      opacity: 0.5; }
     .proyectos div a:hover h4 {
       opacity: 1; }
     .proyectos div a img {
       width: 25vw;
-      display: block; }
+      display: block;
+      -webkit-transition: .8s ease-in-out;
+      transition: .8s ease-in-out; }
     .proyectos div a h4 {
       position: absolute;
       top: 50%;
@@ -123,8 +128,8 @@ h1 {
       transform: translate(-50%, -50%);
       opacity: 0;
       transition: opacity 0.8s;
-      color: white;
-      transition: all 0.6s; }
+      color: black;
+      text-align: center; }
 
 @media (max-width: 425px) {
   .proyectos {
