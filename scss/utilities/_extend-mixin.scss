@@ -1,26 +1,26 @@
 .shadow {
     box-shadow: 8px 8px 15px rgb(39, 39, 39);
-    border: black 1px solid;
+    border: black 2px solid;
     border-radius: 7px;
+}
+.shadow-mayor{
+    box-shadow: 8px 8px 15px rgb(39, 39, 39);
+    border: black 3px solid;
+    border-radius: 20px;
 }
 
 .filtro-gris {
     filter: grayscale(100%);
 }
 
-.borde{
-    border: black solid 2px;
-}
-
-.palabras-resaltadas{
+.palabras-resaltadas {
     color: white;
     transform: scale(1.5);
-    background-color: rgba(0, 0, 0, 0.50) ;
+    background-color: rgba(0, 0, 0, 0.50);
 }
 
 //ANIMACIONES//
-.entrada-arriba{
+.entrada-arriba {
     animation: fadeInDown;
     animation-duration: 1s;
 }
-

@@ -1,26 +1,24 @@
 .servicios {
     display: flex;
     justify-content: space-around;
-    margin: 3%;
-    height: 400px;
+    align-items: center;
+    height: 50vh;
 
-    a {
-        text-decoration: none;
+    figure {
+        background-color: rgba(65, 63, 63, 0.247);
+        @extend .shadow-mayor;
+        img {
 
-        article {
-            width: 25vw;
-            max-height: 400px;
-            transition: 0.8s ease;
-            @extend .shadow;
+            width: 450px;
+        }
 
-            &:hover {
-                scale: 1.1;
-                transition: 0.8s
-            }
+        figcaption {
+            text-align: center;
+            background-color: black;
         }
     }
-
 }
+
 
 @media (max-width: 425px) {
 

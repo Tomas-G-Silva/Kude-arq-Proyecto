@@ -1,13 +1,15 @@
-.shadow, .index .panel-inicio img, .index .reconocimientos img, .proyectos div a img, .servicios a article, .integrantes article img {
+.shadow, .index .panel-inicio img, .index .reconocimientos img, .proyectos div a img, .integrantes article img {
   box-shadow: 8px 8px 15px #272727;
-  border: black 1px solid;
+  border: black 2px solid;
   border-radius: 7px; }
+
+.shadow-mayor, .servicios figure {
+  box-shadow: 8px 8px 15px #272727;
+  border: black 3px solid;
+  border-radius: 20px; }
 
 .filtro-gris, .section-c .mapa, .vision img {
   filter: grayscale(100%); }
-
-.borde, .proyectos div a img, .integrantes article img {
-  border: black solid 2px; }
 
 .palabras-resaltadas, .carousel .carousel-caption h5 {
   color: white;
@@ -145,17 +147,15 @@ h1 {
 .servicios {
   display: flex;
   justify-content: space-around;
-  margin: 3%;
-  height: 400px; }
-  .servicios a {
-    text-decoration: none; }
-    .servicios a article {
-      width: 25vw;
-      max-height: 400px;
-      transition: 0.8s ease; }
-      .servicios a article:hover {
-        scale: 1.1;
-        transition: 0.8s; }
+  align-items: center;
+  height: 50vh; }
+  .servicios figure {
+    background-color: rgba(65, 63, 63, 0.247); }
+    .servicios figure img {
+      width: 450px; }
+    .servicios figure figcaption {
+      text-align: center;
+      background-color: black; }
 
 @media (max-width: 425px) {
   .servicios {

@@ -23,7 +23,6 @@
 
             img {
                 width: 25vw;
-                @extend .borde;
                 display: block;
                 @extend .shadow;
                 -webkit-transition: .8s ease-in-out;
