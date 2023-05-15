@@ -64,6 +64,7 @@
 
 }
 
+//MEDIA Q//
 
 
 @media (max-width: 1024px) {
@@ -105,7 +106,7 @@
 
 
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .integrantes {
         display: flex;
         flex-direction: column;
@@ -117,6 +118,7 @@
             width: 400px;
             display: flex;
             flex-direction: column;
+            margin: 5px;
 
             img {
                 width: 75%;

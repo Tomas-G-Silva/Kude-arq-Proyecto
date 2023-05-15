@@ -43,20 +43,51 @@
     }
 }
 
+// MEDIA Q //
 
-@media (max-width: 425px) {
+@media (max-width: 1024px) {
+    .proyectos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        height: 1000px;
+        align-items: center;
+        justify-items: center;
+
+        div {
+
+            a {
+
+                img {
+                    width: 350px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 768px) {
     .proyectos {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        // justify-content: space-around;
         height: auto;
 
         div {
             margin: 20px;
 
             a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 img {
-                    width: 100%;
+                    width: 90%;
                 }
             }
 

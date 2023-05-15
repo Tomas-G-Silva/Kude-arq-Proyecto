@@ -1,15 +1,17 @@
+main{
+    margin: 15px;
+}
 .servicios {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
+    height: 500px;
 
     figure {
         background-color: rgba(65, 63, 63, 0.247);
         @extend .shadow-mayor;
         img {
-
-            width: 450px;
+            width: 400px;
         }
 
         figcaption {
@@ -19,6 +21,25 @@
     }
 }
 
+.int-servicios{
+    
+    article{
+        display: flex;
+        max-height: 500px;
+        
+        div{
+            
+        }
+    }
+
+}
+
+
+
+
+
+
+//MEDIA Q//
 
 @media (max-width: 425px) {
 
