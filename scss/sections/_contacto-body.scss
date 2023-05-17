@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: space-around;
         margin: 2%;
-        height: 40vh;
+        height: 400px;
 
         div {
             display: flex;
@@ -26,8 +26,7 @@
     .mapa {
         margin: 2%;
         @extend .filtro-gris;
-        max-width: 60vw;
-        height: 45vh;
+        max-width: 55%;
     }
 }
 
@@ -50,10 +49,11 @@
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .section-c {
         display: flex;
         flex-direction: column;
+
 
         article {
             div {
@@ -63,6 +63,7 @@
 
                 p {
                     font-size: large;
+                    text-align: center;
                 }
             }
         }
