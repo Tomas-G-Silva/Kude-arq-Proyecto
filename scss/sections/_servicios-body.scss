@@ -53,22 +53,6 @@
 
 //MEDIA Q//
 @media (max-width: 1024px) {
-    .servicios {
-        figure {
-            margin: 5px;
-
-            img {
-                width: 25rem;
-            }
-        }
-    }
-}
-
-
-
-
-
-@media (max-width: 768px) {
 
     .servicios {
         display: flex;
@@ -99,12 +83,54 @@
         }
 
         &__parrafo {
+            width: 70%;
+            text-align: center;
+
+        }
+
+        &__foto {
+            width: auto;
+        }
+
+
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .servicios {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .servicios2 {
+
+        &__articulo1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__articulo2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__articulo3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__parrafo {
             width: auto;
             text-align: center;
         }
 
         &__foto {
-            width: 90%;
+            width: 80%;
         }
 
 

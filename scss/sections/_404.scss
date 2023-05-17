@@ -1,0 +1,28 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    &__titulo {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__texto {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__enlace {
+        text-decoration: none;
+        color: #007bff;
+    }
+}

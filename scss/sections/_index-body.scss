@@ -27,6 +27,7 @@
             p {
                 font-size: larger;
                 line-height: 1.5;
+                text-align: justify;
             }
         }
 
@@ -97,11 +98,11 @@
 
             div {
                 max-width: revert;
-                text-align: left
+                text-align: left;
             }
 
             img {
-                width: 400px;
+                width: 95%;
                 margin-top: 5rem;
             }
         }
